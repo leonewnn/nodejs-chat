@@ -1,0 +1,32 @@
+extends layout
+
+block header
+    div#logo
+        h1 Chat with node.js.
+        h2 Cooked By Leon
+        h2 Cooked with CLI
+        h2 Cooked for github
+    
+block content
+    div#login
+        form(name="login")
+            | Nickname:
+            input(type="text", id="nickname")
+            input(type="submit", value="Enter room", id="btn-enterroom")
+
+    div#chat
+        div#messages-box
+            div#messages
+            div 
+                form(name="message")
+                    input(type='text', id="message")
+                    input(type='submit', value="Send", id="btn-submitmessage")
+
+        div#server-box
+            div#server
+
+        div#clients-box
+            div#title
+                h2 Users:
+            div#clients
+                ul
